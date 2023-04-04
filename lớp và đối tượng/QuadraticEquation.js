@@ -4,18 +4,6 @@ class QuadraticEquation {
         this.b = b;
         this.c = c;
     }
-
-    geta() {
-        return this.a;
-    }
-
-    getb() {
-        return this.b;
-    }
-
-    getc() {
-        return this.c;
-    }
     getDiscriminant(){
         let delta = (this.b * this.b)-4*this.a*this.c
         return delta
@@ -30,7 +18,7 @@ class QuadraticEquation {
 
 
 }
-let trr = new QuadraticEquation(2,4,2)
+let trr = new QuadraticEquation(2,6,2)
 console.log(trr.getDiscriminant())
     if (trr.getDiscriminant()>0){
         console.log(trr.getRoot1())
