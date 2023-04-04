@@ -33,7 +33,6 @@ class Staff {
     }
 }
 let staff = new Staff('Staff 1', 'staff@gmail.com', 20);
-let nameStaff = staff.getname();
 
 
 console.log(staff);
