@@ -15,7 +15,7 @@ export class EmployeeManager {
             console.log("ko tìm được phần tử bạn muốn thay đổi")
         }
     }
-    delete(n:string){
+    delete(n:number){
         EmployeeManager.employeelist.splice(n,1)
     }
     getlist():Employee[]{
