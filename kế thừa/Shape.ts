@@ -115,8 +115,8 @@ class Rectangle extends Shape implements calculate {
 
     toString() {
         super.toString();
-        console.log("- width" + this._width)
-        console.log("- lenght" + this._lenght)
+        console.log("- width: " + this._width)
+        console.log("- lenght: " + this._lenght)
         console.log("- arena : " + this.getArea())
         console.log("- Perimeter: " + this.getPerimeter())
     }
@@ -126,8 +126,8 @@ class Square extends Rectangle {
 
     private _side: number = 2
 
-    constructor(color: string, filled: boolean, side: number, width: number, lenght: number ) {
-        super(color, filled, width, lenght);
+    constructor(color: string, filled: boolean, side: number) {
+        super(color, filled, side,side);
         this._side = side;
     }
 
@@ -156,7 +156,7 @@ class Square extends Rectangle {
 let shape = new Shape("red",true)
 let circle = new Circle("red",true,10)
 let rectangle = new Rectangle("tím", false , 10, 20)
-let square = new Square("blue",true,10,10,10)
+let square = new Square("blue",true,10,)
 console.log("circle")
 circle.toString()
 console.log("rectangle")
