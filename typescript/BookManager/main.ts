@@ -11,7 +11,7 @@ bookManager.add(book2);
 bookManager.add(book3);
 
 bookManager.update('B003', 'lập trình MySQL')
-console.log(bookManager.getlist())
+console.table(bookManager.getlist())
 
 bookManager.delete("B002")
-console.log(bookManager.getlist())
+console.table(bookManager.getlist())

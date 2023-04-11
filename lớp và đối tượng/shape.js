@@ -5,6 +5,7 @@ class Shape {
         this.color = color;
         this.filled = filled;
     }
+
 }
 class Circle extends Shape {
     constructor(color, filled,radius) {
