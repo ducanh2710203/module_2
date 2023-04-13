@@ -2,7 +2,9 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
-      "es6"
+      "es6",
+      "DOM"
+
     ],
     "outDir": "./build",
     "resolveJsonModule": true,
