@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var employeeSalary_1 = require("./employeeSalary");
+var employee = new employeeSalary_1.EmployeeSalary();
+employee.addNode("tháng 1", 1000);
+employee.addNode("tháng 2", 12984);
+employee.addNode("tháng 3", 7632);
+employee.addNode("tháng 4", 87612);
+employee.addNode("tháng 5", 54658);
+console.table(employee.readlist());
+console.log("=========totalEmployeeSalary=========");
+console.log(employee.totalEmployeeSalary());
+console.log("=========HighestSalaryMonth=========");
+console.log(employee.HighestSalaryMonth());
