@@ -12,8 +12,8 @@ function PhoneNumberClassification(allnum:string[],Viettel:string[],Mobifone:str
     return [Viettel,Mobifone,Vinaphone]
 }
 let allnum:string[]= ['038675467476','038432768','0757643875','0757435345','0178621731','01263812']
-let Viettel : string[] = []
-let Mobifone : string[] = []
-let Vinaphone : string[] = []
-console.log(PhoneNumberClassification(allnum,Viettel,Mobifone,Vinaphone))
+let Vettel : string[] = []
+let MobileIron : string[] = []
+let Vibraphone : string[] = []
+console.log(PhoneNumberClassification(allnum,Vettel,MobileIron,Vibraphone))
 
