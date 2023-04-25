@@ -16,42 +16,36 @@ var LinkedList = /** @class */ (function () {
             this.tail = node;
         }
         this._size++;
+        console.log("dài " + this._size);
     };
-    // insertLastNode(data:T){
-    //     if (!this.head){
-    //         this.insertFirstNode(data)
-    //     }else {
-    //         let node = new Node(data)
-    //         this.tail.next= node
-    //         this.tail = node
-    //         this.size++
-    //     }
-    // }
     LinkedList.prototype.insertLastNode = function (data) {
         if (!this.head) {
             this.insertFirstNode(data);
         }
         else {
             var node = new Node_1.Node(data);
-            // @ts-ignore
-            this.tail.next = node;
             this.tail = node;
+            this.tail.next = node;
             this._size++;
+            console.log("dài " + this._size);
         }
     };
-    // get _size() {
-    //     return this.size
-    // }
     LinkedList.prototype.getsize = function () {
         return this._size;
     };
     LinkedList.prototype.readlist = function () {
         var listdata = [];
-        var currentNode = this.head;
-        while (currentNode !== null) {
-            listdata.push(currentNode.readData());
-            currentNode = currentNode.next;
+        var currentNode1 = this.head;
+        while (currentNode1 !== null) {
+            listdata.push(currentNode1.readData());
+            currentNode1 = currentNode1.next;
         }
+        //     let currentNode2 = this.tail
+        //     while (currentNode2 !== null){
+        //         listdata.push(currentNode2.readData())
+        //         currentNode2 = currentNode2.next
+        //     }
+        //
         return listdata;
     };
     return LinkedList;

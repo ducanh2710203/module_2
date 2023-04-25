@@ -1,5 +1,4 @@
 function TotalRoomRate(arr:number[][]){
-    let ngu :number[] = []
     let sum : number = 0
     for (let i = arr.length-1; i >0; i--) {
         for (let j = 0; j <arr[i].length ; j++) {

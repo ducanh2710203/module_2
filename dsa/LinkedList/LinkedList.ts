@@ -19,32 +19,22 @@ export class LinkedList<T> {
             this.tail = node
         }
         this._size++
+        console.log("dài "+ this._size)
     }
 
-    // insertLastNode(data:T){
-    //     if (!this.head){
-    //         this.insertFirstNode(data)
-    //     }else {
-    //         let node = new Node(data)
-    //         this.tail.next= node
-    //         this.tail = node
-    //         this.size++
-    //     }
-    // }
+
     insertLastNode(data: T): void {
         if (!this.head) {
             this.insertFirstNode(data);
         } else {
             let node = new Node(data);
-            // @ts-ignore
-            this.tail.next = node;
             this.tail = node;
+            this.tail.next = node;
             this._size++;
+            console.log("dài "+ this._size)
+
         }
     }
-    // get _size() {
-    //     return this.size
-    // }
 
     getsize(): number {
         return this._size;
@@ -52,11 +42,17 @@ export class LinkedList<T> {
 
     readlist(){
         let listdata= []
-        let currentNode = this.head
-        while (currentNode !== null){
-            listdata.push(currentNode.readData())
-            currentNode = currentNode.next
+        let currentNode1 = this.head
+        while (currentNode1 !== null){
+            listdata.push(currentNode1.readData())
+            currentNode1 = currentNode1.next
         }
+    //     let currentNode2 = this.tail
+    //     while (currentNode2 !== null){
+    //         listdata.push(currentNode2.readData())
+    //         currentNode2 = currentNode2.next
+    //     }
+    //
         return listdata
     }
 }
