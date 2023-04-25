@@ -1,0 +1,45 @@
+header{
+    padding: 10px;
+    color: white;
+    background-color: blue;
+
+}
+header h1{
+    display: inline;
+}
+nav ul li {
+    display: inline;
+
+    margin: 20px;
+
+
+
+}
+nav ul li img{
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+
+    margin-right:10px;
+}
+nav ul{
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+
+}
+nav ul li img:hover{
+    background-color: silver;
+
+}
+#search{
+    border-radius: 10px;
+    display: inline;
+    margin: 10px;
+    float: left;
+}
+#ngu{
+    text-align: center;
+}
