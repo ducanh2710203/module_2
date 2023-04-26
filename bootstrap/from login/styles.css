@@ -1,0 +1,11 @@
+.form-control{
+    width: 400px;
+    margin: auto;
+
+}
+#inputEmail{
+    border-bottom-left-radius: 0px ;
+}
+.check{
+    padding-top: 10px;
+}
